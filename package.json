@@ -1,0 +1,21 @@
+{
+  "name": "Portfolio-Website",
+  "version": "1.0.0",
+  "description": "A multi-page static portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "lint:html": "htmlhint src/**/*.html",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint": "npm run lint:html && npm run lint:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagheriqbal57/Portfolio-Website.git"
+  },
+  "author": "Sagher Iqbal",
+  "license": "MIT",
+  "devDependencies": {
+    "htmlhint": "^0.16.2",
+    "stylelint": "^14.0.0"
+  }
+}

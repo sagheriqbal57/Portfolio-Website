@@ -10,7 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run linters
+    - name: Check package.json
+      run: cat package.json
+    - name: Clear npm cache
+      run: npm cache clean --force
+    - name: Install dependencies
       run: |
         npm install
-        npm run lint
+    - name: Run linters
+      run: npm run lint
